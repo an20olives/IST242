@@ -12,8 +12,9 @@ public class Height {
         this.inches = inches;
     }
 
-    public Height() {
-        //Constructor initializes all attributes
+    public Height() { //Constructor initializes all attributes
+        this.feet = 0;
+        this.inches = 0;
     }
 
     @Override
