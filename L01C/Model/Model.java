@@ -14,19 +14,19 @@ public class Model {
     }
 
     public void loadData() {
-        //Person1 using all parameter constructor
-        p1 = new Person("Marcus Allen", new Height(5, 2), 200, "Upper Marlboro, Md.", "Dr. Henry A. Wise, Jr.");
+        //Person1 using all parameter constructor, also using new Height class
+        p1 = new Person("Marcus Allen", 5, 2, 200, "Upper Marlboro, Md.", "Dr. Henry A. Wise, Jr.");
 
-        //Person2 using all parameter constructor
-        p2 = new Person("Kyle Alston", new Height(5, 9), 180, "Robbinsville, N.J.", "Robbinsville");
+        //Person2 using all parameter constructor, also using new Height class
+        p2 = new Person("Kyle Alston", 5, 9, 180, "Robbinsville, N.J.", "Robbinsville");
 
-        //Person3 using all parameter constructor
-        p3 = new Person("Troy Apke", new Height(6, 1), 220, "Mt. Lebanon, Pa.", "Mount Lebanon");
+        //Person3 using all parameter constructor, also using new Height class
+        p3 = new Person("Troy Apke", 6, 1, 220, "Mt. Lebanon, Pa.", "Mount Lebanon");
 
-        //Person4 using all parameter constructor
-        p4 = new Person("Matthew Baney", new Height(6, 0), 225, "State College, Pa.", "State College");
+        //Person4 using all parameter constructor, also using new Height class
+        p4 = new Person("Matthew Baney", 6, 0, 225, "State College, Pa.", "State College");
 
-        //Person5 using no parameter constructor
+        //Person5 using no parameter constructor, also using new Height class
         p5 = new Person();
     }
 
