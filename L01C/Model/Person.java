@@ -10,9 +10,9 @@ public class Person {
     private String hometown;
     private String highSchool;
     
-    public Person(String name,Height height, int weight, String hometown, String highSchool) {//Constructor initializes all attributes, added new height attribute
+    public Person(String name, int feet, int inches, int weight, String hometown, String highSchool) {//Constructor initializes all attributes, added new height attribute
         this.name = name;
-        this.height = height;
+        this.height = new Height(feet, inches); //uses the constructor in Height.Very Important
         this.weight = weight;
         this.hometown = hometown;
         this.highSchool = highSchool;
