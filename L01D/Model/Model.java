@@ -1,6 +1,7 @@
 package Model;
 
 import java.util.ArrayList;
+import java.util.Arrays;///
 
 public class Model {
 
@@ -43,20 +44,34 @@ public class Model {
     //for loop
     //return ArrayList<String>
     //modified getData method for use with the array
-    
     //BOTH GETDATA WORK IN CRIPPLED STATE FIX IT
     public String getData(int n) {
-        String s = persons.get(n).toString();
-        return s;
+        ArrayList<String> data = new ArrayList<>();//maybe change all to data
+
+        //String s = persons.get(n).toString().trim();
+        //return s;
+        //return persons.get(n).toString();
+        data.add(persons.toString());
+
+        String stringData = "";
+        for (int i = 0; i < n; i++) {
+            stringData = data.get(i);
+        }
+
+        return stringData;
     }
 
     public ArrayList<String> getData() {
-        ArrayList<String> getData = new ArrayList<>();
+        /*ArrayList<String> getData = new ArrayList<>();
         for (int i = 0; i < persons.size(); i++) {
             getData.add(persons.get(i).toString());
-            getData.add("\n");
-        }
-        return getData;
+            //getData.add("\n");
+        } */
+
+        ArrayList<String> data = new ArrayList<>();
+        data.add(persons.toString());
+
+        return data;
     }
 
     //get and set methods for the person array
