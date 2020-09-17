@@ -32,7 +32,7 @@ public class Model {
 
         //Person5 using no parameter constructor, also using new Height class
         p5 = new Person();
-        
+
         //add persons to ArrayList persons
         persons.add(p1);
         persons.add(p2);
@@ -41,28 +41,27 @@ public class Model {
         persons.add(p5);
     }
 
-
     public String getData(int n) {
+
         switch (n) { //using switch instead of if to return Persons(n).
             case 1:
-                //return p1.toString();
+                return persons.get(0).toString();
             case 2:
-                //return p2.toString();
+                return persons.get(1).toString();
             case 3:
-                //return p3.toString();
+                return persons.get(2).toString();
             case 4:
-                //return p4.toString();
+                return persons.get(3).toString();
             case 5:
-                //return p5.toString();
+                return persons.get(4).toString();
             default:
                 return ("invalid input parameter");
         }
     }
-    
+
     //public ArrayList<String> getData() {
-        
+      //for loop here    
     //}
-    
     //get and set method for persons ArrayList
     public ArrayList<Person> getPersons() {
         return persons;
@@ -71,6 +70,6 @@ public class Model {
     public void setPersons(ArrayList<Person> persons) {
         this.persons = persons;
     }
-    
+
     //removed get and set methods from L01_C for individual person attributes
 }
