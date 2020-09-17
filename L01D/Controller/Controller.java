@@ -12,19 +12,22 @@ public class Controller {
         model = m;
         view = v;
 
-        //Prints all Person from getData now using the array
-        view.basicDisplay(model.getData());
+        //Prints all Person from getData 
+        //view.basicDisplay(model.getData()); <<<< this methods "replaces" the 3 lines below
+        view.basicDisplay(model.getPersons().get(0).toString());
+        view.basicDisplay(model.getPersons().get(1).toString());
+        view.basicDisplay(model.getPersons().get(2).toString());
+
         
-        /* //old print using basic display, remove me
+        /* Old basic display print from L01_C
+        view.basicDisplay(model.getData(1));
         view.basicDisplay(model.getData(2));
-        view.basicDisplay(model.getData(3));
-        view.basicDisplay(model.getData(4));
-        view.basicDisplay(model.getData(5));
+        /...
         //This one will be invalid
         view.basicDisplay(model.getData(6));
-        */
         //Controller asks view to display information from model
         //................
+        */
     }
 
 }
