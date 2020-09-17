@@ -13,7 +13,7 @@ public class Controller {
         view = v;
 
         //Prints all Person from getData 
-        //view.basicDisplay(model.getData()); <<<< this methods "replaces" the lines below
+        view.basicDisplay(model.getData()); //<<<< this methods "replaces" the lines below
         /*
         view.basicDisplay(model.getPersons().get(0).toString());
         view.basicDisplay(model.getPersons().get(1).toString());
@@ -22,7 +22,8 @@ public class Controller {
         view.basicDisplay(model.getPersons().get(4).toString());
         */
         
-        view.basicDisplay(model.getData(1));
+        //System.out.println(model.persons.toString()); //test to see if things print as intended
+
         //Controller asks view to display information from model
         //................
     }
