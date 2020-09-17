@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class Model {
 
     //ArrayList attribute for Person, named persons
-    ArrayList<Person> persons;
+    public ArrayList<Person> persons;
 
     public Model() {
 
@@ -45,23 +45,28 @@ public class Model {
 
         switch (n) { //using switch instead of if to return Persons(n).
             case 1:
-                return persons.get(0).toString();
+                return persons.get(0).toString();//remove toStrings once getData works
             case 2:
-                return persons.get(1).toString();
+                return persons.get(1).toString();//remove toStrings once getData works
             case 3:
-                return persons.get(2).toString();
+                return persons.get(2).toString();//remove toStrings once getData works
             case 4:
-                return persons.get(3).toString();
+                return persons.get(3).toString();//remove toStrings once getData works
             case 5:
-                return persons.get(4).toString();
+                return persons.get(4).toString();//remove toStrings once getData works
             default:
                 return ("invalid input parameter");
         }
     }
 
-    //public ArrayList<String> getData() {
-      //for loop here    
-    //}
+    public ArrayList<String> getData() {
+        ArrayList<String> personsString = new ArrayList<>();
+        //for loop here
+        for (int i = 0; i < persons.size(); i++) {
+            personsString.add(persons.get(i).toString());
+        }
+        return personsString;
+    }
     //get and set method for persons ArrayList
     public ArrayList<Person> getPersons() {
         return persons;
