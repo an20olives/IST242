@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class Model {
 
     //ArrayList attribute for Person, named persons
-    public ArrayList<Person> persons;
+    ArrayList<Person> persons;
 
     public Model() {
 
