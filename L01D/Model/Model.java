@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class Model {
 
     //ArrayList attribute for Person, named persons
-    ArrayList<Person> persons;
+    private ArrayList<Person> persons;
 
     public Model() {
 
@@ -43,30 +43,31 @@ public class Model {
 
     public String getData(int n) {
 
-        switch (n) { //using switch instead of if to return Persons(n).
+        switch (n) { //getData remains the same from L01C, instead gets persons from array and returns it using toString.
             case 1:
-                return persons.get(0).toString();//remove toStrings once getData works
+                return persons.get(0).toString();
             case 2:
-                return persons.get(1).toString();//remove toStrings once getData works
+                return persons.get(1).toString();
             case 3:
-                return persons.get(2).toString();//remove toStrings once getData works
+                return persons.get(2).toString();
             case 4:
-                return persons.get(3).toString();//remove toStrings once getData works
+                return persons.get(3).toString();
             case 5:
-                return persons.get(4).toString();//remove toStrings once getData works
+                return persons.get(4).toString();
             default:
                 return ("invalid input parameter");
         }
     }
 
-    public ArrayList<String> getData() {
-        ArrayList<String> personsString = new ArrayList<>();
-        //for loop here
+    public ArrayList<String> getData() {//ArrayList getData creates ArrayList personsString to take persons ArrayList and returns it in a printable string format.
+        ArrayList<String> getDataString = new ArrayList<>(); //Create ArrayList getDataString with type String to return persons Array List in String form.
+        //for loop to take items from persons ArrayList and add them to getDataString as a String with toString.
         for (int i = 0; i < persons.size(); i++) {
-            personsString.add(persons.get(i).toString());
+            getDataString.add(persons.get(i).toString());
         }
-        return personsString;
+        return getDataString;
     }
+
     //get and set method for persons ArrayList
     public ArrayList<Person> getPersons() {
         return persons;
